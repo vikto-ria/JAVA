@@ -1,0 +1,66 @@
+<html> 
+ <head> 
+    <script type="text/javascript"> 
+         function okno_zamknij_siejka() 
+             { 
+                     window.close() 
+             } 
+
+      </script> 
+ </head> 
+<body> 
+    <form> 
+         <textarea name="siejka" cols="80" rows="54" readonly> 
+          <!DOCTYPE html>   
+          <head>    
+                <title> proste obliczenia</title>    
+                <meta charset="utf-8">   
+           </head>  
+       <body> 
+       <div style="color:green;font-size:54;"> 
+          <script language="JavaScript"> 
+        var D1_Rom=prompt("D1=",""); 
+        var G1_Rom=prompt("G1=","");
+        var D2_Rom=prompt("D2",""); 
+        var G2_Rom=prompt("G2=","");
+        
+        
+        var ilosc_1; 
+        var ilosc_2; 
+        var ilosc;
+      
+                                   var a=parseFloat(D1_Rom); 
+                                   var b=parseFloat(D2_Rom); 
+                                   var c=parseFloat(G1_Rom);
+                                   var d=parseFloat(G2_Rom);
+                                    
+        ilosc_1=D1_Rom-D2_Rom;
+        ilosc_1=86400*ilosc_1;
+        
+        ilosc_2= G1_Rom-G2_Rom;
+      
+        if(G2_Rom>G1_Rom){
+      
+      G2_Rom-G1_Rom
+      
+      }
+      
+      
+      ilosc_2=3600*ilosc_2;
+      
+      ilosc=ilosc_1+ilosc_2;
+      
+          document.write("ilość sekund między dniami i godzinami  ="+a+" dzień"+" "+ "o godzinie"+ " "+ c +" - dzień"+" "+b+" "+"o godzinie"+" "+d+" "+"="+" "+ilosc+" "+"sekund"  ); 
+                        </script> 
+       </div> 
+       
+       </body> 
+      </html> 
+            
+           </textarea> 
+</form> 
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/> 
+<script type="text/javascript"> 
+</script> 
+</body> 
+</html> 
