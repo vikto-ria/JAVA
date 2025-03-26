@@ -1,0 +1,51 @@
+<html> 
+ <head> 
+    <script type="text/javascript"> 
+         function okno_zamknij_siejka() 
+             { 
+                     window.close() 
+             } 
+
+      </script> 
+ </head> 
+<body> 
+    <form> 
+         <textarea name="siejka" cols="120" rows="55" readonly> 
+
+            <html>
+<head>
+    <script type="text/javascript">
+        function samochod(marka_s, model_s, cena_s, maksymalna_predkosc_s) {
+            this.marka = marka_s;
+            this.model = model_s;
+            this.cena = cena_s;
+            this.maksymalna_predkosc = maksymalna_predkosc_s;
+        }
+        samochod.prototype.wypisz = function () {
+            alert(this.marka + ' ' + this.model + ' ' + this.cena+' '+this.maksymalna_predkosc);
+        };
+        var samochod1 = new samochod("Mercedes", "s600", "80000 euro", "330km/h");
+        var samochod2 = new samochod('Audi', 'Rs6', '100000 euro', "325km/h");
+        var samochod3 = new samochod('Tesla', 'Model s', '40000 euro', "290km/h");
+        samochod1.wypisz();  
+        samochod2.wypisz();
+        samochod3.wypisz();
+        document.write("dostęp do właściwości" + "<br>"+"<br>");
+        document.write("samochod pierwszy" + "   " + samochod1.marka + "   " + samochod1.model+ "   " + samochod1.cena+"  "+samochod1.maksymalna_predkosc+"<br>"+"<br>"); 
+        document.write("samochod drugi" + "   " + samochod2.marka + "   " + samochod2.model+ "   " + samochod2.cena+"  "+samochod2.maksymalna_predkosc+"<br>"+"<br>");  
+        document.write("samochod tzreci" + "   " + samochod3.marka + "   " + samochod3.model+ "   " + samochod3.cena+"  "+samochod3.maksymalna_predkosc+"<br>");
+    </script>
+</head>
+<body>
+    <br>
+    programowanie obiektowe
+</body>
+</html>
+
+         </textarea> 
+        </form> 
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/> 
+        <script type="text/javascript"> 
+        </script> 
+        </body> 
+        </html> 

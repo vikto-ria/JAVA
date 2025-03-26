@@ -1,0 +1,68 @@
+<html> 
+ <head> 
+    <script type="text/javascript"> 
+         function okno_zamknij_siejka() 
+             { 
+                     window.close() 
+             }  
+      </script> 
+ </head> 
+<body> 
+    <form> 
+         <textarea name="siejka" cols="100" rows="55" readonly> 
+            
+            <!DOCTYPE html>   
+            <head>    
+            <title>viktoriia</title>    
+            <meta charset="utf-8">   
+            </head>  
+            <body> 
+            <div style="color:navy;font-size:50px;"> 
+            <script language="JavaScript"> 
+            var a=parseFloat(prompt("a=","")); 
+            var b=parseFloat(prompt("b=","")); 
+            
+                function suma_pol(a, b) { 
+                    return a + b; 
+                        } 
+            
+                    function ode_pol(a, b) { 
+                return a - b; 
+                        } 
+            
+                function mno_pol(a, b) { 
+                        return a * b; 
+                            } 
+            
+                    function pot_pol(a, b) { 
+                return Math.pow(a,b)
+                } 
+            
+            
+                function reszta_z_dzielenia_pol(a, b) { 
+                    return a%b;
+                            } 
+            
+            
+                    document.write("suma="+suma_pol(a,b)+"<br>");
+            
+                document.write("odejmowanie="+ode_pol(a,b)+"<br>");
+            
+                    document.write("mnozenie="+mno_pol(a,b)+"<br>");
+            
+                document.write("potengowanie="+pot_pol(a,b)+"<br>");
+            
+                document.write("reszta z dzielenia ="+reszta_z_dzielenia_pol(a,b)+"<br>");
+            
+            </script> 
+            </div> 
+            </body> 
+            </html> 
+            
+           </textarea> 
+</form> 
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/> 
+<script type="text/javascript"> 
+</script> 
+</body> 
+</html>

@@ -1,0 +1,52 @@
+<html> 
+ <head> 
+    <script type="text/javascript"> 
+         function okno_zamknij_siejka() 
+             { 
+                     window.close() 
+             } 
+ 
+      </script> 
+ </head> 
+<body> 
+    <form> 
+         <textarea name="siejka" cols="100" rows="43" readonly> 
+            
+
+            <html> 
+                <head> 
+                 <meta charset="UTF-8"> 
+                 <link rel="stylesheet" href="styl.css"> 
+                </head> 
+               <body> 
+                <script type="text/javascript"> 
+                 function oblicz   () 
+                  { 
+                var a= parseFloat(document.getElementById('a').value); 
+                var b= parseFloat(document.getElementById('b').value); 
+                var c=a*b ;  
+                var d=(2*a)+(2*b) ;  
+                document.getElementsByName('pole')[0].value=c.toFixed(2);
+                document.getElementsByName('obwod')[0].value=d.toFixed(2);
+                  } 
+
+                </script> 
+                 <h1>Pole i obwód prostokąta</h1><br><br> 
+                 Podaj a: <input type="text" id="a" > &nbsp;
+                 Podaj b: <input type="text" id="b" > <br><br> 
+                
+                 <input type="button" name="pole_obwod" value="oblicz" Onclick="oblicz()"><br><br><br>
+                 
+                Pole=&nbsp;<input name="pole" size="5">&nbsp;&nbsp;
+                Obwód=&nbsp;<input name="obwod" size="5">&nbsp;&nbsp;
+                 
+               </body> 
+               </html>
+            
+           </textarea> 
+</form> 
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/> 
+<script type="text/javascript"> 
+</script> 
+</body> 
+</html>
